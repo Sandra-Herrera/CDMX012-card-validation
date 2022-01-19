@@ -16,12 +16,36 @@
       <br />
       <div class="card" id="Datos">
         <label for="input-numero">Numero Tarjeta</label>
-        <input id="num" type="number" placeholder="0000-0000-0000-0000" />
-        <br /><br />
-        <label for="nombre">Nombre</label>
-        <input id="nombre" type="text" placeholder="Nombre de Usuario" />
+        <input id="input-numero" type="number" maxlength="16" autocomplete="off" placeholder="0000-0000-0000-0000" />
       </div>
-      <button id="Buton1">VALIDAR INFORMACION</button>
+        <br /><br />
+      <div class="card" id="Datos">
+        <label for="input-nombre">Nombre Usuario</label>
+        <input id="input-nombre" type="text" placeholder="Ingrese Nombre de Usuario" />
+      </div>
+      <div class="flexbox">
+        <div class="grupo vigencia">
+          <label for="selectMes">Vigencia</label>
+          <div class="flexbox">
+            <div class="grupo-select">
+              <select name="mes" id="selectMes">
+                <option disabled selected>Mes</option>
+              </select>
+            </div>
+            <div class="grupo-select">
+              <select name="año" id="selectAño">
+                <option disabled selected>Año</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="grupo ccv">
+          <label for="inputccv">CCV</label>
+          <input type="number" id="inputccv" maxlength="3" placeholder="Ingrese codigo">
+
+        </div>
+      </div>
+      <button type=submit id="Buton1">VALIDAR INFORMACION</button>
     </form>
 
     <footer></footer>
