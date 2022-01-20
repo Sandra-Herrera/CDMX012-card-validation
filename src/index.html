@@ -14,38 +14,47 @@
         ingresar los siguientes datos:
       </main>
       <br />
-      <div class="card" id="Datos">
-        <label for="input-numero">Numero Tarjeta</label>
-        <input id="input-numero" type="number" maxlength="16" autocomplete="off" placeholder="0000-0000-0000-0000" />
+      <div class="fondoImagen redondearBorde centrarHorizontal bordeSombreado">
+
       </div>
-        <br /><br />
-      <div class="card" id="Datos">
-        <label for="input-nombre">Nombre Usuario</label>
-        <input id="input-nombre" type="text" placeholder="Ingrese Nombre de Usuario" />
-      </div>
-      <div class="flexbox">
-        <div class="grupo vigencia">
-          <label for="selectMes">Vigencia</label>
-          <div class="flexbox">
-            <div class="grupo-select">
-              <select name="mes" id="selectMes">
-                <option disabled selected>Mes</option>
-              </select>
-            </div>
-            <div class="grupo-select">
-              <select name="año" id="selectAño">
-                <option disabled selected>Año</option>
-              </select>
+      <br />
+      <div class="anchuraPersonalizada centrarHorizontal bordeSombreado" >
+        <div class="" id="DatosNum">
+          <label for="input-numero">Numero Tarjeta</label>
+          <input id="input-numero" type="number" maxlength="16" autocomplete="off" placeholder="0000-0000-0000-0000" />
+        </div>
+          <br />
+        <div class="" id="DatosNom">
+          <label for="input-nombre">Nombre Usuario</label>
+          <input id="input-nombre" type="text" placeholder="Ingrese Nombre de Usuario" />
+        </div>
+        <div class="flexbox">
+          <div class="grupo vigencia">
+            <label for="selectMes">Vigencia</label>
+            <div class="flexbox">
+              <div class="grupo-select">
+                <select name="mes" id="selectMes">
+                  <option disabled selected>Mes</option>
+                </select>
+              </div>
+              <div class="grupo-select">
+                <select name="año" id="selectAño">
+                  <option disabled selected>Año</option>
+                </select>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="grupo ccv">
-          <label for="inputccv">CCV</label>
-          <input type="number" id="inputccv" maxlength="3" placeholder="Ingrese codigo">
+          <div class="grupo ccv">
+            <label for="inputccv">CCV</label>
+            <input type="number" id="inputccv" maxlength="3" placeholder="Ingrese codigo">
 
+          </div>
         </div>
       </div>
-      <button type=submit id="Buton1">VALIDAR INFORMACION</button>
+      <br />
+      <div class="anchuraPersonalizada centrarHorizontal">
+        <button type=submit id="Buton1">VALIDAR INFORMACION</button>
+      </div>
     </form>
 
     <footer></footer>
