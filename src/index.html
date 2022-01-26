@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>VALIDA TU TARJETA DE CREDITO CON NOSOTROS</header>
-    <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+    <div action="" id="formulario-tarjeta" class="formulario-tarjeta">
       <br />
       <main>
         Te ayudaremos a corroborar si tu tarjeta es valida, solo tienes que
@@ -21,7 +21,7 @@
       <div class="anchuraPersonalizada centrarHorizontal bordeSombreado" >
         <div class="" id="DatosNum">
           <label for="input-numero">Numero Tarjeta</label>
-          <input id="input-numero" type="number" maxlength="16" autocomplete="off" placeholder="0000-0000-0000-0000" />
+          <input id="input-numero" type="text" maxlength="19" autocomplete="off" placeholder="0000-0000-0000-0000" />
         </div>
           <br />
         <div class="" id="DatosNom">
@@ -53,11 +53,23 @@
       </div>
       <br />
       <div class="anchuraPersonalizada centrarHorizontal">
-        <button type=submit id="Buton1">VALIDAR INFORMACION</button>
+        <button type="submit" id="Buton1" onclick="validar()"> VALIDAR INFORMACION </button>
       </div>
-    </form>
+    </div>
 
     <footer></footer>
-    <script src="index.js" type="module"></script>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div id="modalContainer" class="modal-content">
+        <span id="closeModal" class="close" onclick="closeModal()">&times;</span>
+        <p id="messageModal"></p>
+      </div>
+
+    </div>
+
+    <script type="module" src="index.js"></script>    
   </body>
 </html>
