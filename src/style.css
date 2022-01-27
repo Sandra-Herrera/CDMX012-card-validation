@@ -4,6 +4,10 @@
   height: 250px;
   background-size: cover;
 }
+.fondoPagina{
+  background-image: url(img/fondo1.jpg);
+  background-size: cover;
+}
 
 .bordeSombreado{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -20,13 +24,53 @@
 .centrarTexto{
   text-align: center;
 }
+label, main, header{
+  font-family: cursive;
+}
 
 .anchuraPersonalizada{
   width: 420px;
-  background-color:lightblue;
+  background-color:hsl(38deg 53% 83%);
 }
+.logo-marca{
+  display: flex;
+  justify-content: end;
+}
+.logoImg{ 
+  width: 90px; 
+  height: auto; 
+}
+.chip{
+  width: 50px;
+  height: auto;
+}
+.fuente{
+  font-size: 20px;
+}
+.fuenteNumero{
+  font-size: 30px;
+}
+.bordeLetras {
+  color: #fff;
+  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+  -webkit-font-smoothing: antialiased;
+}
+.removerMargenes{
+  margin-top: 0;
+  margin-bottom: 0;
 
-
+}
+.margenIzq{
+  margin-left: 10px;
+}
+.margenDer{
+  margin-right: 10px;
+}
+.flexbox{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 
 

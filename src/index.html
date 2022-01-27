@@ -7,19 +7,45 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="fondoPagina">
   <div action="" id="formulario-tarjeta" class="formulario-tarjeta">
     <br />
-    <header class="centrarTexto">METODO DE PAGO</header>
-    <main class="centrarTexto">
-      Estas a un paso del viaje de tus sueños
-      <br>
-      Por favor ingresa los datos correspondientes a tu metodo de pago:
-    </main>
+    <div class="anchuraPersonalizada centrarHorizontal bordeSombreado">
+      <header class="centrarTexto">METODO DE PAGO</header>
+      <main class="centrarTexto">
+        Estas a un paso del viaje de tus sueños
+        <br>
+        Por favor ingresa los datos correspondientes a tu metodo de pago:
+      </main>
+    </div>
     <br />
 
     <div class="fondoImagen redondearBorde centrarHorizontal bordeSombreado">
+      <section class="tarjeta" id="tarjeta">
+        <div class="frontal">
+          <div class="logo-marca">
+            <img src="img/logos/master.png" class="logoImg" alt="">
+          </div>
+          <img src="img/logos/chip.png" alt="" class="chip">
+          <div class="datos"> 
+            <div class="grupo" id="numero">
+              <p class="number bordeLetras removerMargenes fuenteNumero margenIzq">0000-0000-0000-0000</p>
+            </div>
+            <br> 
+            <br>
+            <div class="flexbox">
+              <div class="grupo" id="nombre">
+                <p class="nombre bordeLetras removerMargenes fuente margenIzq">Nombre</p>
+              </div>
+              <div class="grupo" id="vigencia">
+                <p class="vigencia bordeLetras removerMargenes fuente margenDer"> <span class="mes">MM</span> / <span class="anio">AA</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+
+      </section>
     </div>
     <br />
 
@@ -40,11 +66,28 @@
             <div class="grupo-select">
               <select name="mes" id="selectMes">
                 <option disabled selected>Mes</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
               </select>
             </div>
             <div class="grupo-select">
               <select name="año" id="selectAño">
                 <option disabled selected>Año</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
               </select>
 
             </div>
