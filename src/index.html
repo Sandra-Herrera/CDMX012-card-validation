@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>VALIDA TU TARJETA DE CREDITO CON NOSOTROS</header>
-    <div action="" id="formulario-tarjeta" class="formulario-tarjeta">
-      <br />
-      <main>
-        Te ayudaremos a corroborar si tu tarjeta es valida, solo tienes que
-        ingresar los siguientes datos:
-      </main>
-      <br />
-      <div class="fondoImagen redondearBorde centrarHorizontal bordeSombreado">
 
+<head>
+  <meta charset="utf-8" />
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div action="" id="formulario-tarjeta" class="formulario-tarjeta">
+    <br />
+    <header class="centrarTexto">METODO DE PAGO</header>
+    <main class="centrarTexto">
+      Estas a un paso del viaje de tus sueños
+      <br>
+      Por favor ingresa los datos correspondientes a tu metodo de pago:
+    </main>
+    <br />
+
+    <div class="fondoImagen redondearBorde centrarHorizontal bordeSombreado">
+
+    </div>
+    <br />
+
+    <div class="anchuraPersonalizada centrarHorizontal bordeSombreado">
+      <div class="" id="DatosNum">
+        <label for="input-numero">Numero Tarjeta</label>
+        <input id="input-numero" type="text" maxlength="19" autocomplete="off" placeholder="0000-0000-0000-0000" />
       </div>
       <br />
-      <div class="anchuraPersonalizada centrarHorizontal bordeSombreado" >
-        <div class="" id="DatosNum">
-          <label for="input-numero">Numero Tarjeta</label>
-          <input id="input-numero" type="text" maxlength="19" autocomplete="off" placeholder="0000-0000-0000-0000" />
-        </div>
-          <br />
-        <div class="" id="DatosNom">
-          <label for="input-nombre">Nombre Usuario</label>
-          <input id="input-nombre" type="text" placeholder="Ingrese Nombre de Usuario" />
-        </div>
-        <div class="flexbox">
-          <div class="grupo vigencia">
-            <label for="selectMes">Vigencia</label>
-            <div class="flexbox">
-              <div class="grupo-select">
-                <select name="mes" id="selectMes">
-                  <option disabled selected>Mes</option>
-                </select>
-              </div>
-              <div class="grupo-select">
-                <select name="año" id="selectAño">
-                  <option disabled selected>Año</option>
-                </select>
-              </div>
+      <div class="" id="DatosNom">
+        <label for="input-nombre">Nombre Usuario</label>
+        <input id="input-nombre" type="text" placeholder="Ingrese Nombre de Usuario" />
+      </div>
+      <div class="flexbox">
+        <div class="grupo vigencia">
+          <label for="selectMes">Vigencia</label>
+          <div class="flexbox">
+            <div class="grupo-select">
+              <select name="mes" id="selectMes">
+                <option disabled selected>Mes</option>
+              </select>
+            </div>
+            <div class="grupo-select">
+              <select name="año" id="selectAño">
+                <option disabled selected>Año</option>
+              </select>
+
             </div>
           </div>
-          <div class="grupo ccv">
-            <label for="inputccv">CCV</label>
-            <input type="number" id="inputccv" maxlength="3" placeholder="Ingrese codigo">
+        </div>
+        <div class="grupo ccv">
+          <label for="inputccv">CCV</label>
+          <input type="text" id="inputccv" maxlength="3" placeholder="Ingrese codigo">
 
-          </div>
         </div>
       </div>
-      <br />
-      <div class="anchuraPersonalizada centrarHorizontal">
-        <button type="submit" id="Buton1" onclick="validar()"> VALIDAR INFORMACION </button>
-      </div>
+    </div>
+    <br />
+    <div class="anchuraPersonalizada centrarHorizontal">
+      <button type="submit" id="Buton1" onclick="validar()"> VALIDAR INFORMACION </button>
+    </div>
+  </div>
+
+  <footer></footer>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div id="modalContainer" class="modal-content">
+      <span id="closeModal" class="close" onclick="closeModal()">&times;</span>
+      <p id="messageModal"></p>
     </div>
 
-    <footer></footer>
+  </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-      <!-- Modal content -->
-      <div id="modalContainer" class="modal-content">
-        <span id="closeModal" class="close" onclick="closeModal()">&times;</span>
-        <p id="messageModal"></p>
-      </div>
-
-    </div>
-
-    <script type="module" src="index.js"></script>    
-  </body>
+  <script type="module" src="index.js"></script>
+</body>
 </html>

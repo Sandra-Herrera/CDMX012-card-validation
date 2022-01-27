@@ -1,7 +1,7 @@
 .fondoImagen{
   background-image: url(img/chichenItza.jpg);
-  width: 619px;
-  height: 300px;
+  width: 420px;
+  height: 250px;
   background-size: cover;
 }
 
@@ -17,8 +17,13 @@
   margin: 0px auto;
 }
 
+.centrarTexto{
+  text-align: center;
+}
+
 .anchuraPersonalizada{
-  width: 619px;
+  width: 420px;
+  background-color:lightblue;
 }
 
 
