@@ -25,5 +25,33 @@ export function closeModal(){
     modal.style.display = "none";
 }
 
+export function mostrarNumTarjeta(){   
+    let numTarjeta = document.getElementById("input-numero");
+    let valor = numTarjeta.value;
+    let numTarjetaImg = document.getElementById("numero");
+    numTarjetaImg.innerHTML = valor;
+}
+export function mostrarNombreTarjeta(){
+    let nomTarjeta = document.getElementById("input-nombre");
+    let valor  = nomTarjeta.value;
+    let nomTarjetaImg = document.getElementById("nombre");
+    nomTarjetaImg.innerHTML = valor;
+}
+export function mostrarMesTarjeta(){
+    let mesTarjeta = document.getElementById("selectMes");
+    let valor  = mesTarjeta.value;
+    let mesTarjetaImg = document.getElementById("vigMes");
+    mesTarjetaImg.innerHTML = valor;
+}
+export function mostrarAnioTarjeta(){
+    let anioTarjeta = document.getElementById("selectAnio");
+    let valor  = anioTarjeta.value;
+    let anioTarjetaImg = document.getElementById("vigAnio");
+    anioTarjetaImg.innerHTML = valor;
+}
 window.validar = validar;
 window.closeModal = closeModal;
+window.mostrarNumTarjeta = mostrarNumTarjeta;
+window.mostrarNombreTarjeta  = mostrarNombreTarjeta;
+window.mostrarMesTarjeta = mostrarMesTarjeta;
+window.mostrarAnioTarjeta = mostrarAnioTarjeta;

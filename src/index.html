@@ -11,7 +11,7 @@
   <div action="" id="formulario-tarjeta" class="formulario-tarjeta">
     <br />
     <div class="anchuraPersonalizada centrarHorizontal bordeSombreado">
-      <header class="centrarTexto">METODO  DE PAGO</header>
+      <header class="centrarTexto">METODO DE PAGO</header>
       <main class="centrarTexto">
         Estas a un paso del viaje de tus sueños
         <br>
@@ -28,17 +28,17 @@
           </div>
           <img src="img/logos/chip.png" alt="" class="chip">
           <div class="datos"> 
-            <div class="grupo" id="numero">
-              <p class="number bordeLetras removerMargenes fuenteNumero margenIzq">0000-0000-0000-0000</p>
+            <div class="grupo">
+              <p id="numero" class="number bordeLetras removerMargenes fuenteNumero margenIzq">0000-0000-0000-0000</p>
             </div>
             <br> 
             <br>
             <div class="flexbox">
-              <div class="grupo" id="nombre">
-                <p class="nombre bordeLetras removerMargenes fuente margenIzq">Nombre</p>
+              <div class="grupo">
+                <p id="nombre" class="nombre bordeLetras removerMargenes fuente margenIzq">Nombre</p>
               </div>
-              <div class="grupo" id="vigencia">
-                <p class="vigencia bordeLetras removerMargenes fuente margenDer"> <span class="mes">MM</span> / <span class="anio">AA</span></p>
+              <div class="grupo">
+                <p class="vigencia bordeLetras removerMargenes fuente margenDer"> <span id="vigMes" class="mes">MM</span> / <span id="vigAnio"class="anio">AA</span></p>
               </div>
             </div>
           </div>
@@ -51,20 +51,21 @@
 
     <div class="anchuraPersonalizada centrarHorizontal bordeSombreado">
       <div class="" id="DatosNum">
-        <label for="input-numero">Numero Tarjeta</label>
-        <input id="input-numero" type="text" maxlength="19" autocomplete="off" placeholder="0000-0000-0000-0000" />
+        <label for="input-numero" class="margenIzq">Numero Tarjeta</label>
+        <input id="input-numero" type="text" maxlength="19" autocomplete="off" onkeyup="mostrarNumTarjeta()" placeholder="0000-0000-0000-0000" />
       </div>
       <br />
       <div class="" id="DatosNom">
-        <label for="input-nombre">Nombre Usuario</label>
-        <input id="input-nombre" type="text" placeholder="Ingrese Nombre de Usuario" />
+        <label for="input-nombre" class="margenIzq">Nombre Usuario</label>
+        <input id="input-nombre" type="text" onkeyup="mostrarNombreTarjeta()" placeholder="Ingrese Nombre de Usuario" />
       </div>
+      <br>
       <div class="flexbox">
         <div class="grupo vigencia">
-          <label for="selectMes">Vigencia</label>
-          <div class="flexbox">
+          <label for="selectMes" class="margenIzq">Vigencia</label>
+          <div class="flexbox margenIzq">
             <div class="grupo-select">
-              <select name="mes" id="selectMes">
+              <select name="mes" id="selectMes" onchange="mostrarMesTarjeta()">
                 <option disabled selected>Mes</option>
                 <option>01</option>
                 <option>02</option>
@@ -81,7 +82,7 @@
               </select>
             </div>
             <div class="grupo-select">
-              <select name="año" id="selectAño">
+              <select name="año" id="selectAnio" onchange="mostrarAnioTarjeta()">
                 <option disabled selected>Año</option>
                 <option>2022</option>
                 <option>2023</option>
@@ -95,7 +96,7 @@
         </div>
         <div class="grupo ccv">
           <label for="inputccv">CCV</label>
-          <input type="text" id="inputccv" maxlength="3" placeholder="Ingrese codigo">
+          <input type="text" class="margenDer" id="inputccv" maxlength="3" placeholder="Ingrese codigo">
 
         </div>
       </div>
