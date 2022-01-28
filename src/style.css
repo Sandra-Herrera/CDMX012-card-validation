@@ -6,7 +6,10 @@
 }
 .fondoPagina{
   background-image: url(img/fondo2.jpg);
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 107%;
+  background-position: center top;
+  background-attachment: fixed;
 }
 
 .bordeSombreado{

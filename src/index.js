@@ -3,6 +3,7 @@ import validator from './validator.js';
 export function validar(){
     let creditCardNumber = window.document.getElementById('input-numero').value;
     creditCardNumber = creditCardNumber.replaceAll("-","");
+    creditCardNumber = creditCardNumber.replaceAll(" ","");
     let validate = validator.validateCreditCard(creditCardNumber);
     mostrarModal(validate);
 }
@@ -27,6 +28,9 @@ export function closeModal(){
 
 export function mostrarNumTarjeta(){   
     let numTarjeta = document.getElementById("input-numero");
+    if(numTarjeta.value.length%5==4 && numTarjeta.value.length<19){
+        numTarjeta.value = numTarjeta.value + " ";
+    }
     let valor = numTarjeta.value;
     let numTarjetaImg = document.getElementById("numero");
     numTarjetaImg.innerHTML = valor;
