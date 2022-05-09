@@ -23,18 +23,33 @@
 .centrarHorizontal{
   margin: 0px auto;
 }
-
 .centrarTexto{
   text-align: center;
 }
-label, main, header{
+label, main{
   font-family: cursive;
+}
+header{
+  font-family: webkit-pictograph;
+  font-size: x-large;
+  color: rgb(59, 153, 35);
+  font-weight:bold;
 }
 
 .anchuraPersonalizada{
   width: 420px;
-  background-color:hsl(38deg 53% 83%);
 }
+.colorTitulo{
+  background-color:#fff;
+}
+.colorPersonalizado{
+  background-color:rgb(224, 178, 230);
+}
+button{
+  background-color: rgb(47, 160, 235);
+  font-weight:bold;
+}
+
 .logo-marca{
   display: flex;
   justify-content: end;
