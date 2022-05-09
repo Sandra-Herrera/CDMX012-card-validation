@@ -1,6 +1,6 @@
 # Tarjeta de crédito válida
 
-[Valida tu tarjeta de crédito] (https://sandra-herrera.github.io/CDMX012-card-validation/src/index.html)
+[Valida tu tarjeta de crédito](https://sandra-herrera.github.io/CDMX012-card-validation/src/index.html)
 
 ## Índice
 
