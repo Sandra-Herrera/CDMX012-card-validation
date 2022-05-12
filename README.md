@@ -20,23 +20,13 @@ En este proyecto elabore una página web con Javascript, HTML y CSS la cual perm
 En el formato de validación el usuario puede ingresar el número de tarjeta, fecha de expiración y el código de seguridad, en este mismo formato se encuentra simulada una tarjeta en la cual se puede visualizar los datos que están siendo ingresados. Cuenta con un botón que envía la información para proceder a la validación y para corroborar la validación se despliega un modal con el mensaje de “Tarjeta valida” o en su defecto “Tarjeta invalida”.
 
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
 ## 2. Usuario
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
+Este proyecto fue pensado para personas que buscan validar su tarjeta de crédito de una manera rápida, eficaz y segura.
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
+Me enfoque en elaborar un formato amigable para los usuarios el cual les permitiera capturar los datos necesarios para la validación de una manera sencilla, incluí también una tarjeta virtual en la cual el usuario puede visualizar en tiempo real los datos que ingresa en el formulario esto con la finalidad de hacer visiblemente más sencillo identificar los datos en la tarjeta física del mismo, se destinó un botón en la parte inferior del formulario en el cual al dar un clic envía la información para ser verificada y posteriormente se despliega un modal en el cual el usuario puede corroborar la validez o invalidez de su tarjeta de crédito.  
 
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
 
 ## 3. Objetivos de aprendizaje
 
