@@ -12,13 +12,19 @@ function mostrarModal(validate){
     let modal = document.getElementById("myModal");
     let modalContainer = document.getElementById("modalContainer");
     let message = document.getElementById("messageModal");
+    let imgValida = document.getElementById("imgValid");
+    imgValida.style.display = "none"; 
+    let imgInvalida = document.getElementById("imgInvalid");
+    imgInvalida.style.display = "none"; 
     modal.style.display = "block";
     if(validate){
         modalContainer.style.backgroundColor = "#6AA84F";
-        message.innerHTML = "Tarjeta de credito valida";        
+        message.innerHTML = "Tarjeta de crédito valida";
+        imgValida.style.display = "block";        
     }else{
-        modalContainer.style.backgroundColor = "red"
-        message.innerHTML = "Tarjeta de credito invalida";
+        modalContainer.style.backgroundColor = "rgb(205 109 109)";
+        message.innerHTML = "Tarjeta de crédito invalida";
+        imgInvalida.style.display = "block";
     }
 }
 export function closeModal(){

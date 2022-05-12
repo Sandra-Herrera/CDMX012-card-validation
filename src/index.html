@@ -9,19 +9,16 @@
 
 <body class="fondoPagina">
   <div id="formulario-tarjeta" class="formulario-tarjeta">
-    <br />
-    <div class="anchuraPersonalizada colorTitulo centrarHorizontal" id="titulo">
-      <header class="centrarTexto">METODO DE PAGO</header>
-    </div>
-    <br>
-    <div class="anchuraPersonalizada colorPersonalizado centrarHorizontal bordeSombreado" id="frase" >
-      <main class="centrarTexto">
-        ¡Estas a un paso del viaje de tus sueños!
+    <div class="barraSuperior">
+      <div class="picLogo">
+        <img alt="imgLogo" class="logoTrueCard" src="img/logo.PNG" />
+      </div>
+      <div class="centrarTexto">
+        ¡Es muy sencillo realizar la validación de tu tarjeta!
         <br>
-        Por favor, ingresa los datos correspondientes a tu metodo de pago:
-      </main>
+        Por favor, ingresa los datos solicitados a continuación:
+      </div>
     </div>
-    <br />
 
     <div class="fondoImagen redondearBorde  centrarHorizontal bordeSombreado">
       <section class="tarjeta" id="tarjeta">
@@ -30,18 +27,19 @@
             <img src="img/logos/master.png" class="logoImg" alt="">
           </div>
           <img src="img/logos/chip.png" alt="" class="chip">
-          <div class="datos"> 
+          <div class="datos">
             <div class="grupo">
               <p id="numero" class="number bordeLetras removerMargenes fuenteNumero margenIzq">0000-0000-0000-0000</p>
             </div>
-            <br> 
+            <br>
             <br>
             <div class="flexbox">
               <div class="grupo">
                 <p id="nombre" class="nombre bordeLetras removerMargenes fuente margenIzq">Nombre</p>
               </div>
               <div class="grupo">
-                <p class="vigencia bordeLetras removerMargenes fuente margenDer"> <span id="vigMes" class="mes">MM</span> / <span id="vigAnio"class="anio">AA</span></p>
+                <p class="vigencia bordeLetras removerMargenes fuente margenDer"> <span id="vigMes"
+                    class="mes">MM</span> / <span id="vigAnio" class="anio">AA</span></p>
               </div>
             </div>
           </div>
@@ -52,15 +50,17 @@
     </div>
     <br />
 
-    <div class="anchuraPersonalizada colorPersonalizado centrarHorizontal bordeSombreado">
-      <div class="" id="DatosNum">
+    <div class="areaDatos centrarHorizontal bordeSombreado">
+      <div class="" id="datosNum">
         <label for="input-numero" class="margenIzq">Numero Tarjeta</label>
-        <input id="input-numero" type="text" maxlength="19" autocomplete="off" onkeyup="mostrarNumTarjeta()" placeholder="0000-0000-0000-0000" />
+        <input class="inputsDatos" id="input-numero" type="text" maxlength="19" autocomplete="off"
+          onkeyup="mostrarNumTarjeta()" placeholder="0000-0000-0000-0000" />
       </div>
       <br />
       <div class="" id="DatosNom">
         <label for="input-nombre" class="margenIzq">Nombre Usuario</label>
-        <input id="input-nombre" type="text" onkeyup="mostrarNombreTarjeta()" placeholder="Ingrese Nombre de Usuario" />
+        <input class="inputsDatos" id="input-nombre" type="text" onkeyup="mostrarNombreTarjeta()"
+          placeholder="Ingrese Nombre de Usuario" />
       </div>
       <br>
       <div class="flexbox">
@@ -68,7 +68,7 @@
           <label for="selectMes" class="margenIzq">Vigencia</label>
           <div class="flexbox margenIzq">
             <div class="grupo-select">
-              <select name="mes" id="selectMes" onchange="mostrarMesTarjeta()">
+              <select class="inputsDatos" name="mes" id="selectMes" onchange="mostrarMesTarjeta()">
                 <option disabled selected>Mes</option>
                 <option>01</option>
                 <option>02</option>
@@ -85,7 +85,7 @@
               </select>
             </div>
             <div class="grupo-select">
-              <select name="año" id="selectAnio" onchange="mostrarAnioTarjeta()">
+              <select class="inputsDatos" name="año" id="selectAnio" onchange="mostrarAnioTarjeta()">
                 <option disabled selected>Año</option>
                 <option>2022</option>
                 <option>2023</option>
@@ -93,20 +93,19 @@
                 <option>2025</option>
                 <option>2026</option>
               </select>
-
             </div>
           </div>
         </div>
         <div class="grupo ccv">
           <label for="inputccv">CCV</label>
-          <input type="text" class="margenDer" id="inputccv" maxlength="3" placeholder="Ingrese codigo">
+          <input class="inputsDatos margenDer" type="text" id="inputCcv" maxlength="3" placeholder="Ingrese codigo">
         </div>
       </div>
       <br>
     </div>
     <br />
-    <div class="anchuraPersonalizada centrarHorizontal" >
-      <button type="submit" id="Buton1" onclick="validar()"> ENVIAR </button>
+    <div class="areaBtnCentrar">
+      <button type="submit" id="Buton1" onclick="validar()"> VALIDAR </button>
     </div>
   </div>
 
@@ -117,12 +116,17 @@
 
     <!-- Modal content -->
     <div id="modalContainer" class="modal-content">
-      <span id="closeModal" class="close" onclick="closeModal()">&times;</span>
-      <p id="messageModal"></p>
+      <div style="width: 100%">
+        <span id="closeModal" class="close" onclick="closeModal()">&times;</span>
+        <p id="messageModal"></p>
+      </div>
+      <img id="imgValid" src="img/imgValidCard.jpg" class="imgTarjetaValida" alt="valida">
+      <img id="imgInvalid" src="img/imgInvalidCard.jpg" class="imgTarjetaInvalida" alt="invalida">
     </div>
 
   </div>
 
   <script type="module" src="index.js"></script>
 </body>
+
 </html>
