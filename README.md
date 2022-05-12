@@ -4,8 +4,8 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
+* [1. Descripción del proyecto](#1-Descripción del proyecto)
+* [2. Usuario](#2-Usuario)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
@@ -13,22 +13,16 @@
 
 ***
 
-## 1. Preámbulo
+## 1. Descripción del proyecto
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+En este proyecto elabore una página web con Javascript, HTML y CSS la cual permite a los usuarios validar el número de su tarjeta de crédito, para efectuar dicha validación utilice el algoritmo de Luhn que es un método de suma de verificación, es utilizado para validar números de identificación; tales como tarjetas de crédito.
 
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
+En el formato de validación el usuario puede ingresar el número de tarjeta, fecha de expiración y el código de seguridad, en este mismo formato se encuentra simulada una tarjeta en la cual se puede visualizar los datos que están siendo ingresados. Cuenta con un botón que envía la información para proceder a la validación y para corroborar la validación se despliega un modal con el mensaje de “Tarjeta valida” o en su defecto “Tarjeta invalida”.
+
 
 ![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
-## 2. Resumen del proyecto
+## 2. Usuario
 
 En este proyecto tendrás que construir una aplicación web que le permita a un
 usuario validar el número de una tarjeta de crédito. Además, tendrás que
