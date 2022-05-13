@@ -1,6 +1,6 @@
 # Card-Validation
 
-Visita el sitio [True Cards](https://sandra-herrera.github.io/CDMX012-card-validation/src/index.html)
+Visita el sitio [True Cards](https://sandra-herrera.github.io/CDMX012-card-validation/src/index.html) 💳 
 
 ## Índice
 
