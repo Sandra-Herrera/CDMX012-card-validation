@@ -1,6 +1,6 @@
-# Tarjeta de crédito válida
+# Card-Validation
 
-[Valida tu tarjeta de crédito](https://sandra-herrera.github.io/CDMX012-card-validation/src/index.html)
+Visita el sitio [True Cards](https://sandra-herrera.github.io/CDMX012-card-validation/src/index.html)
 
 ## Índice
 
@@ -74,7 +74,7 @@ Deseo poder quitar el mensaje que me aparecerá en pantalla con el resultado de 
 
 A continuación se presentan las vistas del sitio web "Ture Cards" terminado. 
 
-### Vista inicial de la interfaz al ingresar al sitio:
+### Vista de interfaz al ingresar al sitio:
 ![interfaz1-cardValidation](https://github.com/Sandra-Herrera/CDMX012-card-validation/blob/main/src/img/README/interfaz1-cardValidation.JPG)
 
 ### Vista con datos del usuario capturados:
