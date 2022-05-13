@@ -6,7 +6,7 @@
 
 * [1. Descripción del proyecto](#1-Descripción del proyecto)
 * [2. Usuario](#2-Usuario)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
+* [3. Diseño de interfaz](#3-Diseño de interfaz)
 * [4. Consideraciones generales](#4-consideraciones-generales)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
 * [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
@@ -28,11 +28,11 @@ Este proyecto fue pensado para personas que buscan validar su tarjeta de crédit
 Me enfoque en elaborar un formato amigable para los usuarios el cual les permitiera capturar los datos necesarios para la validación de una manera sencilla, incluí también una tarjeta virtual en la cual el usuario puede visualizar en tiempo real los datos que ingresa en el formulario esto con la finalidad de hacer visiblemente más sencillo identificar los datos en la tarjeta física del mismo, se destinó un botón en la parte inferior del formulario en el cual al dar un clic envía la información para ser verificada y posteriormente se despliega un modal en el cual el usuario puede corroborar la validez o invalidez de su tarjeta de crédito.  
 
 
-## 3. Objetivos de aprendizaje
+## 3. Diseño de interfaz
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
-### HTML
+### Prototipo de alta fidelidad
 
 - [ ] **Uso de HTML semántico**
 
