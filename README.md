@@ -17,7 +17,7 @@
 
 En este proyecto elabore una página web con Javascript, HTML y CSS la cual permite a los usuarios validar el número de su tarjeta de crédito, para efectuar dicha validación utilice el algoritmo de Luhn que es un método de suma de verificación, es utilizado para validar números de identificación; tales como tarjetas de crédito.
 
-En el formato de validación el usuario puede ingresar el número de tarjeta, fecha de expiración y el código de seguridad, en este mismo formato se encuentra simulada una tarjeta en la cual se puede visualizar los datos que están siendo ingresados. Cuenta con un botón que envía la información para proceder a la validación y para corroborar la validación se despliega un modal con el mensaje de “Tarjeta valida” o en su defecto “Tarjeta invalida”.
+En el formato de validación el usuario puede ingresar el número de tarjeta, fecha de expiración y el código de seguridad, en este mismo formato se encuentra simulada una tarjeta en la cual se puede visualizar los datos que están siendo ingresados. Cuenta con un botón que envía la información para proceder a la validación y para corroborar la validación se despliega un modal con el mensaje de "Tarjeta de crédito válida"  o en su defecto "Tarjeta de crédito inválida".
 
 
 
@@ -30,9 +30,21 @@ Me enfoque en elaborar un formato amigable para los usuarios el cual les permiti
 
 ## 3. Diseño de interfaz
 
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
+Se elaboró un prototipo de la interfaz web en Figma priorizando la experiencia de los usuarios.
 
 ### Prototipo de alta fidelidad
+
+El diseño principal de la interfaz se encuentra a continuación, este diseño se mostró a una cantidad de usuarios y lo consideraron amigable ya que el formulario en el cual se ingresaran los datos para realizar la validación se encuentra visible así como también el botón para enviar dicha información.
+
+![img1-cardValidation](https://github.com/Sandra-Herrera/CDMX012-card-validation/blob/main/src/img/README/img1-cardValidation.JPG)
+
+Los usuarios mencionaron que era necesario contar con mensajes claros y visibles para corroborar la validez de su tarjeta, por lo que se elaboró un modal en el cual se mostraran los siguientes mensajes "Tarjeta de crédito inválida" o "Tarjeta de crédito válida" según sea el resultado. 
+De esta manera es visiblemente más sencillo conocer el resultado de su validación.
+![img2-cardValidation](https://github.com/Sandra-Herrera/CDMX012-card-validation/blob/main/src/img/README/img2-cardValidation.JPG)
+
+![img3-cardValidation](https://github.com/Sandra-Herrera/CDMX012-card-validation/blob/main/src/img/README/img3-cardValidation.JPG)
+
+
 
 - [ ] **Uso de HTML semántico**
 
