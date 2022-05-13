@@ -19,11 +19,11 @@ function mostrarModal(validate){
     modal.style.display = "block";
     if(validate){
         modalContainer.style.backgroundColor = "#6AA84F";
-        message.innerHTML = "Tarjeta de crédito valida";
+        message.innerHTML = "Tarjeta de crédito válida";
         imgValida.style.display = "block";        
     }else{
         modalContainer.style.backgroundColor = "rgb(205 109 109)";
-        message.innerHTML = "Tarjeta de crédito invalida";
+        message.innerHTML = "Tarjeta de crédito inválida";
         imgInvalida.style.display = "block";
     }
 }
